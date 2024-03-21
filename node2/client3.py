@@ -14,7 +14,7 @@ def request_file(file_name, server, client_local_path):
 		return "\n File not found on any of the nearest servers"
 
 if __name__ == "__main__":
-	server = "172.31.6.1:8002"
+	server = "172.31.13.233:8002"
 	current_working_directory = os.getcwd()
 	client_local_path = os.path.join(current_working_directory, 'client_files3')
 	file_name = input('Enter file name: ')
