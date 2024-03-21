@@ -28,12 +28,7 @@ class FileServerRPC:
            file_content = get_file_content(file_path) + "\nServer - " + self.server_id + ":" + str(port)
        else:
            print(f"\nFile {file_name} not found in server {self.server_id}:{port}")
-           print(f"Forwarding request to nearest server {NEAREST_SERVER[0]}")
-           client = xmlrpc.client.ServerProxy(f'http://{NEAREST_SERVER[0]}')
-           file_content = client.get_file(file_name, client_local_path)
-           if file_content != "File not found":
-               self.update_file(file_name, file_content, self.file_directory)
-       return file_content
+           return "\nFile not found"
  
    def update_file(self, file_name, content, pathname):
        file_path = os.path.join(pathname, file_name)
