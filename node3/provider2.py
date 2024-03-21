@@ -13,7 +13,7 @@ def update_file(file_name, content, server, port):
        print(f"Error updating file on server {server}: {e}")
 
 if __name__ == "__main__":
-   server = 'localhost'
+   server = '172.31.11.63'
    port = '8003'
    current_working_directory = os.getcwd()
    server_path = os.path.join(current_working_directory, 'server_files3')
