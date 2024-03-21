@@ -3,7 +3,7 @@ import os
 import sys
 import xmlrpc
  
-NEAREST_SERVER = ['172.31.3.132:8002']
+NEAREST_SERVER = ['172.31.6.1:8002']
  
 # Function to check if file exists in server's file system
 def file_exists(file_path):
