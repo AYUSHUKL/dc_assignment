@@ -9,6 +9,7 @@ def request_file(file_name, server, client_local_path):
 			print("\nFile Found")
 			print("\nFile being downloaded to nearer local machine")
 			proxy.update_file(file_name, file_content, client_local_path)
+			return file_content
 	except Exception as e:
 		print("\nError accessing server {server}: {e}\n")
 		return "\n File not found on any of the nearest servers"
