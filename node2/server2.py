@@ -3,7 +3,7 @@ import os
 import sys
 import xmlrpc
  
-NEAREST_SERVER = ['localhost:8003']
+NEAREST_SERVER = ['172.31.11.63:8003']
  
 # Function to check if file exists in server's file system
 def file_exists(file_path):
@@ -54,7 +54,7 @@ def start_rpc_server(server_id, port, file_directory):
         sys.exit(0)
  
 if __name__ == "__main__":
-   address = 'localhost'
+   address = '172.31.6.1'
    port = 8002
    current_working_directory = os.getcwd()
    server_local_path = os.path.join(current_working_directory, 'server_files2')
