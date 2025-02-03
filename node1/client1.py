@@ -22,3 +22,6 @@ if __name__ == "__main__":
 	file_content = request_file(file_name, server, client_local_path)
 	print(file_content)
 	print("\n")
+
+
+#adding the changes
